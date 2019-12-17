@@ -1,0 +1,13 @@
+alexa:
+  smart_home:
+    filter:
+      exclude_domains:
+        - automation
+        - media_player
+        - script
+        - group
+alexa_media:
+  accounts:
+    - email: !secret amazon_email
+      password: !secret amazon_password
+      url: !secret amazon_url

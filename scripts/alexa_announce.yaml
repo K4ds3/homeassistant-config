@@ -1,0 +1,7 @@
+sequence:
+- service: notify.alexa_media
+  data_template:
+     target: "{{ states.input_select.alexa_broadcast_target.state }}"
+     data:
+       type: announce
+     message: "{{ states.input_text.alexa_broadcast_message.state }}"

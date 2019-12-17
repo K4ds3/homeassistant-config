@@ -1,0 +1,10 @@
+exclude:
+  domains:
+  - device_tracker
+  - camera
+  - group
+  - media_player
+  - sensor
+  - weather
+  - zone
+  - scene

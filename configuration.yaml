@@ -1,0 +1,43 @@
+homeassistant:
+  name: "Home"
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: !secret home_elevation
+  unit_system: "metric"
+  time_zone: "Europe/Vienna"
+  customize: !include "customize.yaml"
+  packages: !include_dir_named "packages/"
+
+frontend:
+  themes: !include_dir_merge_named "themes/"
+
+config:
+sun:
+shopping_list:
+person:
+updater:
+recorder:
+mobile_app:
+
+automation: !include_dir_list "automations/"
+binary_sensor: !include "components/binary_sensors.yaml"
+browser_mod: !include "components/browser_mod.yaml"
+camera: !include "components/cameras.yaml"
+device_tracker: !include_dir_list "components/device_trackers/"
+group: !include "components/groups.yaml"
+hacs: !include "components/hacs.yaml"
+history: !include "components/history.yaml"
+http: !include "components/http.yaml"
+light: !include "components/lights.yaml"
+#logbook: !include "components/logbook.yaml"
+media_player: !include_dir_list "components/media_players/"
+mikrotik: !include "components/mikrotik.yaml"
+mqtt: !include "components/mqtt.yaml"
+notify: !include_dir_list "components/notifiers/"
+octoprint: !include "components/octoprint.yaml"
+scene: !include "scenes.yaml"
+scene old: !include_dir_list "components/scenes/"
+script: !include_dir_named "scripts/"
+sensor: !include "components/sensors.yaml"
+telegram_bot: !include "components/telegram_bot.yaml"
+weather: !include "components/weather.yaml"

@@ -1,0 +1,13 @@
+# Notify me when the disk reaches 90% usage
+
+alias: "homeassistant_disk_use_notification"
+initial_state: true
+trigger:
+  - platform: numeric_state
+    entity_id: sensor.disk_use_percent
+    above: 90
+action:
+  service: notify.kadse
+  data:
+    title: "**System alert!**"
+    message: "Home Assistant is running low on disk space, usage is currently at {{ states.sensor.disk_use_percent.state }} %!"

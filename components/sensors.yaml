@@ -1,0 +1,9 @@
+- platform: octoprint
+- platform: mitemp_bt
+  mac: !secret filamentbox0_mac
+  name: "filamentbox0"
+  timeout: 60
+  median: 5
+  monitored_conditions:
+    - temperature
+    - humidity

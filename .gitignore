@@ -1,0 +1,40 @@
+# Generic ignores
+*.log
+*.db
+*.db-shm
+*.db-wal
+*.pyc
+._*
+__pycache__
+.HA_VERSION
+
+# Directory (contents) ignores
+.cloud/
+.storage/
+android/
+deps/
+tts/
+www/
+themes/
+custom_components/
+components/_disabled/
+
+# Specific file ignores
+.shopping_list.json
+.spotify-token-cache
+secrets.yaml
+known_devices.yaml
+*.pickle
+.uuid
+
+# File ignores which contain personal device names
+components/history.yaml
+components/cameras.yaml
+components/browser_mod.yaml
+components/device_trackers/ping.yaml
+
+# Ignore files created by IDE's
+node-red/
+
+# Specific keeps
+!.gitkeep

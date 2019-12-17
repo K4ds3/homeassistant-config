@@ -1,0 +1,18 @@
+# Activates the scene stardust at 5:50AM when I'm at home and it's a workday 
+
+alias: "turn_on_lights_stardust"
+trigger:
+  - platform: time
+    at: "05:50:00"
+condition:
+  - condition: state
+    entity_id: person.kadse
+    state: "home"
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: "on"
+action:
+  - service: scene.turn_on
+    data:
+      entity_id: scene.stardust
+

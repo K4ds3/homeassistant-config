@@ -1,0 +1,14 @@
+# Sends a notification when there's an unsucessful login attempt
+
+alias: "login_attempt_notification"
+trigger:
+  - platform: state
+    entity_id: persistent_notification.http_login
+condition:
+  - condition: template
+    value_template: "{{ trigger.to_state.state != 'None' }}"
+action:
+  - service: notify.kadse
+    data_template:
+      title: "*Unsucessful login attempt*"
+      message: "{{ states.persistent_notification.http_login.attributes.message }}"

@@ -1,0 +1,18 @@
+input_boolean:
+  party:
+    name: "Party Mode"
+    initial: off
+    icon: mdi:looks
+input_text:
+  alexa_broadcast_message:
+    name: "Broadcast Message"
+    initial: "Enter text to broadcast"
+input_select:  
+  alexa_broadcast_target:
+    name: "Broadcast Target"
+    options:
+      - media_player.jonas_echo_dot
+      - media_player.wohnzimmer_echo_dot
+      - media_player.wohnung
+    initial: media_player.jonas_echo_dot
+    icon: mdi:speaker-wireless

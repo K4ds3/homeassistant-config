@@ -1,0 +1,13 @@
+name: "Stardust"
+entities:
+  light.ender3_light: false
+  light.3dprinter_backlight:
+    state: true
+    xy_color: [0.444, 0.517]
+    brightness: 29
+  light.spotlight0:
+    state: true
+    xy_color: [0.136, 0.04]
+    brightness: 85
+  light.jonas_lamp: false
+  light.workplace_light: false

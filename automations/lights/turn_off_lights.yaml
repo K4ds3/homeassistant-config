@@ -1,0 +1,17 @@
+# Automatically turns off the lights at 7:30AM when I'm not at home and it's a workday 
+
+alias: "turn_off_lights"
+trigger:
+  - platform: time
+    at: "08:00:00"
+condition:
+  - condition: state
+    entity_id: person.kadse
+    state: "not_home"
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: "on"
+action:
+  - service: scene.turn_on
+    data:
+      entity_id: scene.blackout

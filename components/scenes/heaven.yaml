@@ -1,0 +1,20 @@
+name: "Heaven"
+entities:
+  light.ender3_light: 
+    state: true
+    brightness: 254
+  light.3dprinter_backlight:
+    state: true
+    brightness: 254
+    rgb_color: [255, 255, 255]
+  light.spotlight0:
+    state: true
+    brightness: 254
+    rgb_color: [255, 255, 255]
+  light.jonas_lamp:
+    state: true
+    brightness: 254
+    rgb_color: [255, 255, 255]
+  light.workplace_light:
+    state: true
+    brightness: 254

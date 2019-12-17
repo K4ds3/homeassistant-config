@@ -1,0 +1,20 @@
+# Sync tasmota states on startup
+
+alias: "tasmota_startup_sync"
+trigger:
+  platform: homeassistant
+  event: start
+action:
+  - service: mqtt.publish
+    data:
+      topic: "cmnd/sonoffs/state"
+      payload: ""
+  - service: mqtt.publish
+    data:
+      topic: "cmnd/sonoffs/POWER"
+  - service: mqtt.publish
+    data:
+      topic: "cmnd/sonoffs/POWER2"
+  - service: mqtt.publish
+    data:
+      topic: "cmnd/sonoffs/POWER3"    

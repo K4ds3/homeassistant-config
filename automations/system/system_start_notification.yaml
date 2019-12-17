@@ -1,0 +1,10 @@
+# Notify me when HA starts
+
+alias: "homeassistant_start_notification"
+trigger:
+  - platform: homeassistant
+    event: start
+action:
+  - service: notify.kadse
+    data:
+      message: "Home Assistant has started!"

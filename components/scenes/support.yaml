@@ -1,0 +1,15 @@
+name: "Support"
+entities:
+  light.ender3_light: false
+  light.3dprinter_backlight:
+    state: true
+    rgb_color: [197, 32, 255]
+    brightness: 95
+  light.spotlight0:
+    state: true
+    rgb_color: [255, 0, 255]
+    brightness: 75
+  light.jonas_lamp: false
+  light.workplace_light:
+    state: true
+    brightness: 50

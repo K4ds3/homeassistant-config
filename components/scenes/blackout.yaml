@@ -1,0 +1,7 @@
+name: "Blackout"
+entities:
+  light.ender3_light: false
+  light.3dprinter_backlight: false
+  light.spotlight0: false
+  light.jonas_lamp: false
+  light.workplace_light: false

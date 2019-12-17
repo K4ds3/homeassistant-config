@@ -1,0 +1,13 @@
+# Sends a notification when a new version
+# of a HACS integration is released.
+
+alias: "hacs_update_notification"
+trigger:
+  - platform: numeric_state
+    entity_id: sensor.hacs
+    above: 0
+action:
+  - service: notify.kadse
+    data_template:
+      title: "*New HACS Integration Release*"
+      message: "There are {{ trigger.to_state.state }} pending HACS updates."

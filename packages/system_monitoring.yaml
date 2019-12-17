@@ -1,0 +1,25 @@
+sensor:
+  - platform: uptime
+    name: "Uptime"
+  - platform: time_date
+    display_options:
+      - time
+      - date
+      - date_time
+  - platform: version
+    name: "version_available"
+    source: hassio
+    image: raspberrypi3
+  - platform: version
+    name: "version_current"
+  - platform: systemmonitor
+    resources:
+      - type: disk_use_percent
+        arg: /
+      - type: memory_use_percent
+      - type: processor_use
+      - type: swap_use
+      - type: ipv4_address
+        arg: eth0
+      - type: ipv4_address
+        arg: wlan0

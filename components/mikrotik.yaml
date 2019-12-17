@@ -1,0 +1,4 @@
+- host: !secret mikrotik_ip
+  username: !secret mikrotik_username
+  password: !secret mikrotik_password
+  method: wireless

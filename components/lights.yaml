@@ -1,0 +1,14 @@
+- platform: flux_led
+  devices:
+    10.10.10.14:
+      name: "3dprinter_backlight"
+- platform: switch
+  name: bedlamp
+  entity_id: switch.bedlamp
+- platform: group
+  name: "Zimmer"
+  entities:
+    - light.ender3_light
+    - light.3dprinter_backlight
+    - light.spotlight0
+    - light.jonas_lamp

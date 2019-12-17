@@ -1,0 +1,4 @@
+platform: group
+name: "kadse"
+services:
+  - service: telegram

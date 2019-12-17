@@ -1,0 +1,10 @@
+# Notify me when HA stops
+
+alias: "homeassistant_stop_notification"
+trigger:
+  - platform: homeassistant
+    event: shutdown
+action:
+  - service: notify.kadse
+    data:
+      message: "Home Assistant has stopped!"

@@ -1,0 +1,12 @@
+- host: !secret octoprint_sapphirepro_ip
+  port: !secret octoprint_sapphirepro_port
+  name: "SapphirePro"
+  api_key: !secret octoprint_sapphirepro_key
+  bed: true
+  number_of_tools: 1
+- host: !secret octoprint_prusa_ip
+  port: !secret octoprint_prusa_port
+  name: "Prusa"
+  api_key: !secret octoprint_prusa_key
+  bed: true
+  number_of_tools: 1

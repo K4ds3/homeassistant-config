@@ -1,0 +1,14 @@
+light.3dprinter_backlight:
+  friendly_name: "Printer Backlight"
+media_player.firetv_livingroom:
+  friendly_name: "FireTV"
+sensor.temperature:
+  device_class: temperature
+  unit_of_measurement: "°C"
+sensor.humidity:
+  device_class: humidity
+  unit_of_measurement: "%"
+sensor.pm10:
+  unit_of_measurement: "μg/m³"
+sensor.pm25:
+  unit_of_measurement: "μg/m³"
