@@ -11,4 +11,5 @@
     - light.ender3_light
     - light.3dprinter_backlight
     - light.spotlight0
+    - light.spotlight1
     - light.jonas_lamp

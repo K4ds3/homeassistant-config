@@ -9,6 +9,10 @@ entities:
     state: true
     rgb_color: [255, 0, 255]
     brightness: 75
+  light.spotlight1:
+    state: true
+    rgb_color: [255, 0, 255]
+    brightness: 30
   light.jonas_lamp: false
   light.workplace_light:
     state: true

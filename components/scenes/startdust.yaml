@@ -9,5 +9,9 @@ entities:
     state: true
     xy_color: [0.136, 0.04]
     brightness: 85
+  light.spotlight1:
+    state: true
+    xy_color: [0.136, 0.04]
+    brightness: 85
   light.jonas_lamp: false
   light.workplace_light: false
