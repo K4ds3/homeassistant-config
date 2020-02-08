@@ -1,0 +1,11 @@
+# Turn off my growlight at 08:30 pm 
+
+alias: "turn_off_growlight"
+trigger:
+  - platform: time
+    at: "20:30:00"
+condition:
+action:
+  - service: switch.turn_off
+    data:
+      entity_id: switch.growlight
