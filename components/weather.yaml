@@ -1,7 +1,3 @@
-- platform: openweathermap
-  name: "OpenWeatherMap"
-  mode: freedaily
-  api_key: !secret openweathermap_key
 - platform: darksky
   name: "darksky"
   mode: daily
