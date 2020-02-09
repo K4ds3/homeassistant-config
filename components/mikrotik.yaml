@@ -1,4 +1,5 @@
-- host: !secret mikrotik_ip
+- name: "mikrotik0"
+  host: !secret mikrotik_ip
   username: !secret mikrotik_username
   password: !secret mikrotik_password
-  method: wireless
+  arp_ping: true
